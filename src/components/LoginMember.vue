@@ -26,6 +26,9 @@
         </div>
         <div id="errorMessage"></div>
         <button @click="login" class="btn btn-block">Login</button>
+        <button class="btn btn-block btn-social btn-facebook">
+          <span class="fab fa-facebook-square"></span> Sign in with Facebook
+        </button>
       </div>
     </div>
   </div>
@@ -124,5 +127,16 @@ export default {
 .btn-block {
   display: block;
   width: 100%;
+}
+.btn-facebook {
+  color: #fff;
+  background-color: #3b5998;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.btn-facebook:focus,
+.btn-facebook.focus {
+  color: #fff;
+  background-color: #2d4373;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 </style>
